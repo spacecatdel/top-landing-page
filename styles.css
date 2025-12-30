@@ -1,3 +1,6 @@
+body {
+    font-family: Roboto, 'Open Sans', sans-serif;
+}
 .header {
     background-color: #1F2937;
     display: flex;
@@ -5,7 +8,6 @@
 }
 
 h1 {
-    font-family: Roboto, 'Open Sans', sans-serif;
     font-weight: 900;
     color: #f9faf8;
     font-size: 48px;
@@ -16,7 +18,6 @@ h1 {
 }
 
 .text {
-    font-family: Roboto, 'Open Sans', sans-serif;
     font-size: 18px;
     color: #f9faf8;
 }
@@ -41,16 +42,24 @@ h1 {
 
 .boxes {
     display: flex;
+    gap: 60px;
+    justify-content: center;
+    margin: 50px 10px;
+    
 }
 .box-img {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 3px solid #3882f6;
+    border-radius: 5px;
 }
 
 .box-text {
-    font-family: Roboto, 'Open Sans', sans-serif;
     font-size: 18px;
     color: #868686;
+    text-align: center;
+    width: 150px;
 }
 
 .s3 {
@@ -63,12 +72,13 @@ h1 {
 }
 
 .quote {
-    font-family: Roboto, 'Open Sans', sans-serif;
+    
     font-style: italic;
     font-size: 36px;
     color: #1f2937;
     font-weight: 300;
     text-align: center;
+    flex-basis: 100px;
 }
 
 .quote-end {
@@ -88,6 +98,11 @@ h1 {
     display: flex;
     height: 100px;
     width: 600px;
+    justify-content: space-between;
+    align-items: center;
+    color: #e5e7eb;
+    padding: 10px 60px;
+    border-radius: 7px;
 }
 
 .s4-left {
@@ -95,8 +110,31 @@ h1 {
     flex-direction: column;
 }
 
+.s4-header {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.s4-text {
+    font-size: 14px;
+}
+
+.s4-button {
+    width: 100px;
+    height: 30px;
+    background-color: #3882f6;
+    border-radius: 5px;
+    border-color: #e5e7eb;
+    border-style: solid;
+    font-weight: bold;
+    color: #e5e7eb;
+}
+
 .footer {
     background-color: #1F2937;
     display: flex;
     justify-content: center;
+    padding: 30px;
+    color: #e5e7eb;
+    font-size: 14px;
 }
